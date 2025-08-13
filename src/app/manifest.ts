@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Witty",
     short_name: "Witty",
-    description: "Fun, Game, and the stuff. All in one",
+    description: "Fun, entertainment and addiction. You want it, you have it.",
     start_url: "/",
     background_color: "#fff",
     theme_color: "#fff",
