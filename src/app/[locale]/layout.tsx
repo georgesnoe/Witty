@@ -1,6 +1,8 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import type { Metadata } from "next";
+
 
 export default async function LocaleLayout({
   children,
@@ -16,12 +18,15 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale}>
+      {children}
+    </NextIntlClientProvider>
   );
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Witty",
+    description: "Fun, entertainment and addiction. You want it, you have it.",
+  };
 }

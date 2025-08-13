@@ -14,15 +14,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${manrope.variable} antialiased`}>
+    <html>
+      <body className={`${manrope.className} antialiased`}>
         {children}
       </body>
     </html>
   );
 }
 
-export async function generateMetadata(): Promise<Metadata> {
+export function generateMetadata(): Metadata {
   return {
     title: "Witty",
     description: "Fun, entertainment and addiction. You want it, you have it.",
