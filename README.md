@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Witty
 
-## Getting Started
+!(https://placehold.co/100x100/123456/FFF?text=Witty)
+🎯 Project Overview
 
-First, run the development server:
+Witty is a web application designed to provide a platform for entertainment, engagement, and connection. Built with modern technologies, Witty aims to deliver a fluid and intuitive user experience while being easily maintainable and extensible. The application is fully internationalized, allowing it to support multiple languages effortlessly.
+🚀 Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    Responsive User Interface: Design optimized for a seamless experience on all devices, from mobile phones to desktops.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    Internationalization (i18n): Supports multiple languages using next-intl, with flexible message management.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    High-Performance Navigation: Uses Next.js App Router for fast loading and efficient navigation between pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Fluid Animations: Utilizes tw-animate-css for modern and attractive visual effects.
 
-## Learn More
+🛠️ Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+    Next.js 14 (App Router): The React framework for building the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    TypeScript: Ensures a robust and type-safe codebase.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    Tailwind CSS: A utility-first CSS framework for rapid and custom styling.
 
-## Deploy on Vercel
+    next-intl: The internationalization library for Next.js App Router.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    tw-animate-css: A Tailwind plugin for powerful CSS animations.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    Manrope: The font used for typography.
+
+📂 Project Structure
+
+The project structure follows Next.js App Router conventions, with dedicated folders for pages, components, and internationalization.
+
+/
+├── app/                  # Main App Router directory
+│   ├── [locale]/         # Route group for internationalization
+│   │   ├── (main)/       # (Awaiting specific routes)
+│   │   ├── layout.tsx    # Layout for internationalized routes
+│   │   └── page.tsx      # Project home page
+│   ├── layout.tsx        # Main RootLayout of the application
+│   └── globals.css       # Global CSS files
+├── components/           # Reusable components
+├── styles/               # Additional CSS styles
+├── messages/             # Folder for translation files (e.g., fr.json)
+├── public/               # Static assets (images, fonts, etc.)
+├── tailwind.config.ts    # Tailwind CSS configuration
+├── tsconfig.json         # TypeScript configuration
+├── package.json          # Dependency management file
+└── ...
+
+⚙️ Installation and Setup
+
+To install and run the Witty project locally, follow these steps:
+Prerequisites
+
+Ensure you have Node.js (version 18 or higher) and npm installed on your machine.
+Instructions
+
+    Clone the repository:
+
+    git clone https://github.com/georgesnoe/Witty.git
+    cd Witty
+
+    Install dependencies:
+
+    npm install
+
+    Start the development server:
+
+    npm run dev
+
+The application will be accessible at http://localhost:3000.
+🌍 Internationalization
+
+The project uses next-intl for language management.
+
+    Translation Files: Translation messages are stored in the messages/ folder as JSON files (e.g., fr.json, en.json).
+
+    Add a new language: To add a new language, simply create a new JSON file in the messages folder (e.g., es.json for Spanish) and populate it with the necessary translation keys.
+
+🤝 Contribution
+
+We welcome contributions to this project! To contribute, please follow these steps:
+
+    Fork the project.
+
+    Create a new branch for your feature (git checkout -b feature/my-new-feature).
+
+    Commit your changes (git commit -m 'feat: add a new feature').
+
+    Push to the branch (git push origin feature/my-new-feature).
+
+    Open a Pull Request.
+
+📄 License
+
+This project is licensed under the MIT License. For more information, see the LICENSE file in the repository.
