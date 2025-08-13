@@ -18,9 +18,13 @@ export default async function LocaleLayout({
   }
 
   return (
-    <NextIntlClientProvider locale={locale}>
-      {children}
-    </NextIntlClientProvider>
+    <html lang={locale}>
+      <body>
+        <NextIntlClientProvider locale={locale}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
 
