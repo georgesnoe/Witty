@@ -1,5 +1,26 @@
 {
-  "Test": {
-    "title": "Hello"
+  "HomePage": {
+    "Header": {
+      "Logo": {
+        "alt": "Witty logo"
+      },
+      "Navbar": {
+        "features_text": "Features",
+        "features_anchor": "#features",
+        "howdoesitwork_text": "How does it work ?",
+        "howdoesitwork_anchor": "#howdoesitwork",
+        "community_text": "Community",
+        "community_anchor": "#community",
+        "jokes_text": "Jokes",
+        "jokes_anchor": "#jokes",
+        "ranking_text": "Ranking",
+        "ranking_anchor": "#ranking",
+        "download_text": "Download",
+        "download_anchor": "#download"
+      },
+      "Auth": {
+        "login": "Login"
+      }
+    }
   }
 }
